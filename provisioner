@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+apt-get update
+
+apt-get -y install apache2
+
+## installing mysql
+debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
+debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
+apt-get -y install mysql-server
+
+apt-get -y install mysql-server libapache2-mod-auth-mysql php5-mysql
+apt-get -y install php5 libapache2-mod-php5 php5-mcrypt php5-gd libssh2-php
+
+mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS wordpress_dev;"
+
+cd /var/www/html/
+rm index.html
+wget http://wordpress.org/latest.tar.gz
+
+tar xzvf latest.tar.gz
+
+cd wordpress/
+
+mv ./* ../
+
+cd ..
+rm latest.tar.gz
+rm -R wordpress/
