@@ -3,8 +3,6 @@ Vagrant for Wordpress development
 
 This is a simple wordpress enviroment for development porpouses!
 
-Remember change Authentication Unique Keys and Salts
-https://api.wordpress.org/secret-key/1.1/salt/
 
 MySQL Credentials
 -----------------
