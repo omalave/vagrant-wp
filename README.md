@@ -25,6 +25,6 @@ $> git clone https://github.com/omalave/vagrant-wp.git .
 $> vagrant up --provision
 ```
 
-####Test enter to http://127.0.0.1:8000/
+####For test enter to http://127.0.0.1:8000/
 
 ####*Enjoy!*
