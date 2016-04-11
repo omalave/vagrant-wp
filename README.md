@@ -1,0 +1,2 @@
+# vagrant-wp
+Wordpress Vagrant
