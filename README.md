@@ -1,2 +1,2 @@
 # vagrant-wp
-Wordpress Vagrant
+Vagrant for Wordpress development
