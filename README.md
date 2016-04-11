@@ -7,8 +7,8 @@ https://api.wordpress.org/secret-key/1.1/salt/
 
 MySQL Credentials
 -----------------
-- user: vagrant
-- pass: vagrant
+- user: root
+- pass: root
 
 Usage
 -----
